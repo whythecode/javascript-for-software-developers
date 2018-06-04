@@ -1,6 +1,6 @@
 # js-days
 
-- directory
+- directory pro thema
   - aufgabe text
   - aufgabe lösung
   - beispielcode
