@@ -46,9 +46,9 @@ function pillars(numOfPillars, distance, width) {
 
 function isIsogram(word) {
   // your code goes here
-  const letters = {};
-  for (let i = 0; i < word.length; i++) {
-    const char = word[i].toLowerCase();
+  var letters = {};
+  for (var i = 0; i < word.length; i++) {
+    var char = word[i].toLowerCase();
     if (letters[char]) {
       return false;
     }
