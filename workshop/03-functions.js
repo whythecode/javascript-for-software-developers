@@ -131,3 +131,28 @@ var anonymousFunc = function() {
 // var -> function scoped
 // let, const -> block scoped
 
+var arr = [[1, 2], [3, 4]]
+
+var flat = [];
+arr.forEach(item => {
+
+  item.forEach(subitem => {
+
+    flat.push(subitem);
+  });
+});
+
+console.log(flat);
+
+var arr2 = [3, 4, 5, ...arr];
+console.log(arr2);
+
+function someFunc(a, b) {
+
+  var ariable = [1, 2, 3];
+  console.log(ariable.length);
+}
+
+someFunc(1, 2);
+
+
