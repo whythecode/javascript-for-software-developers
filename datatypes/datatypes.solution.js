@@ -3,7 +3,14 @@
 /**
  * 1. Given an array of values, find out how many falsy values are contained
  */
-const falsyValues = ['a', 1, 0, '', [], {}, {a: 'b'}, false, {1: false}];
+var falsyValues = ['a', 1, 0, '', [], {}, {a: 'b'}, false, {1: false}];
+var falsyCount = 0;
+for (var i = 0; i < falsyValues; i++) {
+  if (!falsyValues[i]) {
+    falsyCount++;
+  }
+}
+console.log(falsyCount);
 
 console.log(falsyValues.reduce((prev, curr) => {
   if (!curr) {
@@ -25,8 +32,8 @@ console.log(falsyValues.reduce((prev, curr) => {
  */
 
 function pillars(numOfPillars, distance, width) {
-  const between = numOfPillars - 1 * distance;
-  const pills = numOfPillars > 2 ? numOfPillars - 2 * width : 0;
+  const between = (numOfPillars - 1) * distance;
+  const pills = numOfPillars > 2 ? (numOfPillars - 2) * width : 0;
   return between + pills;
 }
 
