@@ -90,6 +90,18 @@ var jim = {
   name: 'Jim'
 }
 
-if (jim && jim.name) {
+if (jim) { // check if jim is not falsy
   console.log(jim.name);
 }
+
+console.log(jim.age);
+// console.log(jim.age.year);
+
+var arr = [1,2,3];
+for (var i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}
+  
+arr.forEach(function(item) {
+  console.log(item);
+});
