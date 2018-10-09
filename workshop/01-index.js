@@ -60,5 +60,36 @@ ho`;
 
 console.log('https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/template_strings');
 
+console.log('Inspector: F12 or Cmd + Alt + I etc');
 
 
+console.log('🦄');
+
+// truthy falsy
+var eins = 1;
+var zwei = 2;
+console.log(eins === zwei);
+if (eins) {
+  console.log('wahr');
+}
+
+// truthy
+// 1, true, 'wahr', [], {}, 
+
+// ALWAYS!!! use three ===
+1 == '1'  // true - with casting
+1 === '1' // false - without casting
+1 === parseInt('1', 10); // true - with manual casting
+
+1 !== '1' // true
+
+// falsy
+// false, 0, undefined, null, NaN, ''
+
+var jim = {
+  name: 'Jim'
+}
+
+if (jim && jim.name) {
+  console.log(jim.name);
+}
