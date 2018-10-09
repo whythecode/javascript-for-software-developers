@@ -1,4 +1,4 @@
-// DOM
+// DOM (to test, open the index.html in this same folder)
 
 /**
  * 1. Add 2 other list items to the list with the ID 'list-with-id'. For example, with the content 'F' and 'G'.
