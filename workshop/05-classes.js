@@ -8,6 +8,12 @@ function User(firstname, lastname, password) {
   this.password = password;
 }
 
+User.createUser = function () {
+
+  return new User();
+}
+User.createUser();
+
 // Method definition
 User.prototype.getFullName = function() {
   return `${this.firstname} ${this.lastname}`;
@@ -16,6 +22,8 @@ User.prototype.getFullName = function() {
 // instanciation
 const rüdiger = new User('Rüdiger', 'Schmidt', 'topSecret');
 const klaus = new User('Klaus', 'Müller', 'secret');
+
+console.log(klaus.createUser);
 
 User.prototype.age = 42;
 
